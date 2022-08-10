@@ -1,0 +1,49 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 2 versions
+*/
+
+@media only screen and (max-width:1200px) {
+    .food-items {
+        display: flex;
+        margin-bottom: 30px !important;
+    }
+}
+
+@media only screen and (max-width:992px) {
+    .main-menu {
+        display: block !important;
+        position: fixed;
+        background-color: #f7c79fcb;
+        width: 250px;
+        top: 0;
+        bottom: 0;
+        right: -250px;
+        margin: 0 !important;
+        transition: 0.3s;
+        color: white;
+        padding: 0 !important;
+    }
+    .main-menu__item {
+        margin: 13px 15px !important;
+        border: 1px solid white;
+        text-align: center;
+        padding: 10px 0;
+    }
+    .menu-icon {
+        display: block;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .header-img {
+        order: 0;
+    }
+    .content {
+        order: 1;
+    }
+}
+
+@media only screen and (max-width: 576px) {}

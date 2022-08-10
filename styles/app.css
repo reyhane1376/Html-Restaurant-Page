@@ -1,0 +1,343 @@
+html {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+*,
+:after,
+:before {
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit
+}
+
+body {
+    font-family: "Vazir-FD";
+    direction: rtl;
+}
+
+a {
+    text-decoration: none;
+    color: #6f6f6d;
+}
+
+.logo__img {
+    width: 70%;
+}
+
+.main-menu {
+    list-style: none;
+    z-index: 999;
+}
+
+.main-menu__item {
+    margin: 0 25px;
+    border-top: 2px solid transparent;
+}
+
+.main-menu__item:hover .main-menu__link {
+    border-top: 2px solid #f1791a;
+    color: #f1791a;
+}
+
+.main-menu__link {
+    font-family: "Vazir-Medium";
+    transition: 0.3s;
+    padding: 1px 0;
+}
+
+.menu-icon {
+    font-size: 29px;
+    cursor: pointer;
+    display: none;
+    color: #F7C79F;
+}
+
+.content {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.header-title {
+    font-size: 35px;
+}
+
+.header-description {
+    line-height: 30px;
+}
+
+.header-link {
+    padding: 5px 25px;
+    background-color: #f1791a;
+    border-radius: 18px;
+    color: white;
+    border: 1px solid transparent;
+    transition: 0.3s;
+}
+
+.header-link:hover {
+    color: #f1791a;
+    background-color: white;
+    border: 1px solid #f1791a;
+}
+
+.section-title {
+    text-align: center;
+    color: #f1791a;
+}
+
+.section-caption {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.product {
+    border-radius: 30px;
+    box-shadow: 0px 0px 15px 0px #6f6f6d2d;
+    margin-bottom: 25px;
+}
+
+.product img {
+    transition: 0.3s;
+}
+
+.product:hover img {
+    opacity: 0.6;
+}
+
+.product-title {
+    font-family: "Vazir-Bold";
+    color: #6f6f6d;
+    padding: 13px 0;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.product-title:hover {
+    color: #f1791a;
+    transform: scale(1.1);
+}
+
+.services {
+    box-shadow: 0px 0px 15px 0px #6f6f6d31;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.services:hover .service-title {
+    color: #6f6f6d !important;
+    transform: scale(1.1);
+}
+
+.service-title {
+    text-align: center;
+    font-family: "Vazir-Medium";
+    transition: 0.3s;
+}
+
+.service-content {
+    text-align: center;
+    color: #6F6F6D;
+    font-family: "Vazir-Thin";
+    font-size: 14px;
+}
+
+.food-items {
+    list-style: none;
+    font-family: "Vazir-Medium";
+}
+
+.food-item {
+    padding: 20px 0 0 0;
+}
+
+.food-item-link {
+    padding: 8px 10px 8px 25px;
+}
+
+.food-item-link.active {
+    background-color: #F1791A;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    color: white;
+}
+
+.food {
+    border-bottom-left-radius: 40px;
+    background-color: #F1791A;
+    margin-bottom: 25px;
+    transition: 0.3s;
+}
+
+.food:hover {
+    background-color: #984E11;
+}
+
+.food-content {
+    height: 47px;
+}
+
+.price {
+    background-color: #984E11;
+    color: white;
+    padding: 17px;
+    margin-top: -5px !important;
+    transition: 0.3s;
+}
+
+.food:hover .price {
+    background-color: #F1791A;
+}
+
+.food:hover img {
+    opacity: 0.6;
+}
+
+.title {
+    color: white;
+    text-align: center;
+    font-family: "Vazir-Medium";
+    margin-right: 20px !important;
+    padding-bottom: 7px;
+}
+
+.comment {
+    padding: 0 60px;
+}
+
+.comment-img {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .16);
+    border-radius: 50%;
+    width: 85px !important;
+    height: 85px !important;
+}
+
+.comment-content {
+    padding-right: 20px;
+}
+
+.comment-rating {
+    color: #FAD56B;
+    margin-right: 3px;
+}
+
+.comment-body {
+    color: #6f6f6d;
+    line-height: 28px
+}
+
+.comment-person {}
+
+.comment-person::before {
+    content: "-";
+    margin-right: 5px
+}
+
+.owl-next,
+.owl-prev {
+    outline: 0;
+    position: absolute;
+    top: 0;
+    bottom: 0
+}
+
+.owl-prev {
+    right: -20px;
+}
+
+.owl-next {
+    left: -20px;
+}
+
+.owl-prev,
+.owl-next {
+    width: 30px !important;
+    height: 30px !important;
+}
+
+.owl-prev span,
+.owl-next span {
+    font-size: 34px !important;
+    color: #984E11 !important;
+    background-color: rgba(241, 121, 26, 30%);
+    border-radius: 5px;
+    display: flex !important;
+    width: 30px !important;
+    height: 30px !important;
+    align-items: center;
+    justify-content: center;
+}
+
+.owl-theme .owl-nav [class*=owl-]:hover {
+    background: 0;
+    color: 0;
+    text-decoration: none;
+}
+
+.owl-dots .owl-dot {
+    outline: 0;
+}
+
+.owl-dots .owl-dot span {
+    background-color: #F1791A !important;
+    opacity: 40%;
+    transition: 0.3s;
+}
+
+.owl-dots .owl-dot.active span {
+    background-color: #F1791A !important;
+    opacity: 1;
+    transform: scale(1.6);
+    box-shadow: 0 0 10px #f17b1ac0;
+}
+
+.footer {
+    background-image: url(../image/footer.png);
+    background-repeat: no-repeat;
+    padding: 100px 0 40px 0;
+}
+
+.footer-logo {
+    width: 70px;
+    margin-bottom: 20px;
+}
+
+.address {
+    font-family: "Vazir-Bold";
+    color: #6F6F6D;
+    max-width: 89px;
+    line-height: 23px;
+}
+
+.footer-title {
+    color: #6F6F6D;
+    font-family: "Vazir-Bold";
+}
+
+.footer-content {
+    list-style: none;
+    color: #6F6F6D;
+    font-family: "Vazir-Medium";
+}
+
+.footer-content li {
+    margin-bottom: 15px;
+}
+
+.social-item a {
+    padding-left: 20px;
+}
+
+.footer-icon {
+    font-size: 40px;
+    color: #F1791A;
+}
+
+.footer a {
+    transition: 0.3;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+    color: #F1791A;
+}
